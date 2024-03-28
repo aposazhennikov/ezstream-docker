@@ -26,9 +26,14 @@ Build and run the Docker container using Docker Compose:
 
 
 ```
+mkdir -p /home/ezstream
 docker-compose up --build
 ```
 This command will build the Docker image using the Dockerfile in the ezstream directory and tag it as ezstream:latest. The container will be named ezstream_politics and will use the host's network.
+You should also add some music files which you would ike to stream to the /home/ezstream directory and create playlist.
+```
+find /home/ezstream -type f -name "*.mp3" | tee -a /home/ezstream/playlist.txt
+```
 
 Volumes
 The service uses a bind mount volume to link the host directory /home/ezstream to the container's directory /home/ezstream. This allows you to manage your playlists and other necessary files directly from the host.
