@@ -6,7 +6,7 @@ This repository contains the Docker setup for running an ezStream radio broadcas
 
 Before you begin, ensure you have met the following requirements:
 
-- You have a **Linux-based host** with Docker installed.
+- You have a **Linux-based host** with Docker/Docker compose and Git installed.
 - You have a basic understanding of Docker and Docker Compose.
 - You have cloned the repository to your local machine or server.
 
