@@ -35,6 +35,8 @@ The service uses a bind mount volume to link the host directory /home/ezstream t
 
 Usage
 Once the container is running, ezstream will start broadcasting based on the provided ezstream.xml configuration. You can manage your playlists and audio files in the specified intake directory.
+Please, dont forget to change your music storage folders in docker-compose, ezstream. and Dockerfile to your actual folder, or use /home/ezstream for music storage and playlist.txt file
+Also you should change ip adress in ezstream to your own Icecast IP server in ezstream.xml if it's placed on the same server,  as a ezstream you can leave it as it is.
 
 Contributing
 Contributions to this project are welcome. You can help by:
@@ -47,6 +49,8 @@ Contact
 If you have any questions or feedback, please contact [Aleksandr] at [aposazhennikoff@gmail.com].
 
 Thank you for using or contributing to ezstream.
+
+
 
 
 
