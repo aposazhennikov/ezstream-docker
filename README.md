@@ -29,8 +29,10 @@ Build and run the Docker container using Docker Compose:
 mkdir -p /home/ezstream
 docker-compose up --build
 ```
-This command will build the Docker image using the Dockerfile in the ezstream directory and tag it as ezstream:latest. The container will be named ezstream_politics and will use the host's network.
-You should also add some music files which you would ike to stream to the /home/ezstream directory and create playlist.
+This command will build the Docker image using the Dockerfile in the ezstream directory and tag it as ezstream:latest. 
+The container will be named ezstream_politics and will use the host's network.
+
+You should also add some music files which you would like to stream to the /home/ezstream directory and create playlist.
 ```
 find /home/ezstream -type f -name "*.mp3" | tee -a /home/ezstream/playlist.txt
 ```
@@ -40,8 +42,7 @@ The service uses a bind mount volume to link the host directory /home/ezstream t
 
 Usage
 Once the container is running, ezstream will start broadcasting based on the provided ezstream.xml configuration. You can manage your playlists and audio files in the specified intake directory.
-Please, dont forget to change your music storage folders in docker-compose, ezstream. and Dockerfile to your actual folder, or use /home/ezstream for music storage and playlist.txt file
-Also you should change ip adress in ezstream to your own Icecast IP server in ezstream.xml if it's placed on the same server,  as a ezstream you can leave it as it is.
+You may want to change ip adress in ezstream.xml if your Icecast is not on the same server as an ezstream otherwise you can leave it as it is.
 
 Contributing
 Contributions to this project are welcome. You can help by:
