@@ -4,8 +4,8 @@
   <servers>
     <server>
       <hostname>localhost</hostname>
-      <url>http://147.45.104.73:8000/stream</url>
-      <password>1qaz2wSX</password>
+      <url>http://127.0.0.1:8000/stream</url>
+      <password>password</password>
 
     </server>
   </servers>
