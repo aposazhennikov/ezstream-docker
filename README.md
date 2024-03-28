@@ -15,7 +15,7 @@ Before you begin, ensure you have met the following requirements:
 To get started with `ezstream_politics`, clone this repository and navigate into the directory:
 
 ```
-git clone git@github.com:aposazhennikov/ezstream-docker.git
+git clone https://github.com/aposazhennikov/ezstream-docker.git
 cd ezstream-docker
 ```
 Configuration
