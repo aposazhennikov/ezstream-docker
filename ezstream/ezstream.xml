@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ezstream>
+
+  <servers>
+    <server>
+      <hostname>localhost</hostname>
+      <url>http://147.45.104.73:8000/stream</url>
+      <password>1qaz2wSX</password>
+
+    </server>
+  </servers>
+
+  <streams>
+    <stream>
+                <mountpoint>/stream</mountpoint>
+                <format>MP3</format>
+                <shuffle>1</shuffle>
+                <playlist_program>0</playlist_program>
+                <svrinfoname>Музыкальная станция</svrinfoname>
+                <svrinfogenre>Talk</svrinfogenre>
+                <svrinfodescription>Описание</svrinfodescription>
+                <svrinfobitrate>128</svrinfobitrate>
+                <svrinfochannels>2</svrinfochannels>
+                <svrinfosamplerate>44100</svrinfosamplerate>
+                <svrinfopublic>1</svrinfopublic>
+    </stream>
+  </streams>
+
+  <intakes>
+    <intake>
+      <filename>/home/ezstream/playlist.txt</filename>
+    </intake>
+  </intakes>
+
+</ezstream>

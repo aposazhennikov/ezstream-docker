@@ -1,0 +1,10 @@
+services:
+  ezstream:
+    build:
+      context: /home/app/ezstream
+      dockerfile: Dockerfile_politics
+    image: ezstream_politics:latest
+    container_name: ezstream_politics
+    network_mode: host
+    volumes:
+      - /home/politics:/home/politics
